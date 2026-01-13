@@ -17,12 +17,11 @@
                 sum += numbers[i];
             }
             let mid = sum / numbers.length;
+
+            let a = numbers.filter(num => num > mid);
+            
             console.log(`Сумма: ${sum}`);
             console.log(`Среднее значение: ${mid}`);
-            let a = 0;
-            for (i = mid; i < mid; i++) {
-                a = numbers;
-            }
             console.log(`Числа больше среднего: ${a}`);
         }
         task();
