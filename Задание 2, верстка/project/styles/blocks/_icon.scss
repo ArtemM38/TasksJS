@@ -1,0 +1,49 @@
+@use "../helpers" as *;
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    --size: #{rem(20)};
+
+    @include square(var(--size));
+
+    content: "";
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--location {
+    &::before {
+      background-image: url("../image/icon_location.svg");
+    }
+  }
+
+  &::after {
+    width: rem(20);
+    height: rem(10);
+    content: "";
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &--arrow-bottom {
+    &::after {
+      background-image: url("../image/arrow-bottom.svg");
+    }
+  }
+  &--valute {
+    &::before {
+      --size: #{rem(12)};
+
+    @include square(var(--size));
+      background-image: url("../image/valute_rub.svg");
+    }
+    padding-left: rem(700);
+    font-weight: 600;
+  }
+}

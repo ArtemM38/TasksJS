@@ -1,2 +1,8 @@
-@use "./globals";
-@use "./variables";
+@use "globals";
+@use "variables";
+@use "utils";
+
+@use './blocks/button';
+@use './blocks/header';
+@use './blocks/icon';
+@use './blocks/catalog';

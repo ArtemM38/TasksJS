@@ -1,15 +1,37 @@
-@use 'helpers' as *;
+@use "helpers" as *;
 
 body {
-    padding: 100px;
+  @include fluid-text(14, 12);
 
-    p{
-        @include fluid-text(48,16);
+  font-family: var(--font-family-base);
+  color: var(--color-dark);
 
-        width: rem(100);
+  h3,
+  .h3 {
+    color: var(--color-red);
+  }
+  h1,
+  .h1,
+  h2,
+  .h2 {
+    color: var(--color-dark);
+    font-weight: 500;
+  }
 
-        @include mobile {
-            background-color: black;
-        }
-    }
+  h1,
+  .h1 {
+    @include fluid-text(34, 14);
+  }
+
+  h2,
+  .h2 {
+    @include fluid-text(28, 18);
+  }
+
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
 }

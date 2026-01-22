@@ -1,14 +1,316 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Catalog</title>
-</head>
-<body>
-  
+  <meta charset="UTF-8"></meta>
 
-    
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  ></meta>
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="./styles/css/main.css"
+  ></link>
+
+  <title>Catalog</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top-info container">
+      <div class="header__adress">
+        <span class="icon icon--location">Иркутск</span>
+      </div>
+
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a
+              href=""
+              class="header__menu-link"
+            >Бренды</a>
+          </li>
+
+          <li class="header__menu-item">
+            <a
+              href=""
+              class="header__menu-link icon icon--arrow-bottom"
+            >Для бизнеса</a>
+          </li>
+
+          <li class="header__menu-item">
+            <a
+              href=""
+              class="header__menu-link"
+            >Работа в WB</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__top_valute">
+        <span class="icon icon--valute">RUB</span>
+      </div>
+    </div>
+
+    <div class="header__main-data container">
+      <a class="header__logo logo">
+        <img
+          class="logo__image"
+          src="./styles/image/logo-wb.webp"
+          alt=""
+          width="216"
+          height="58"
+        >
+      </a>
+
+      <div
+        class="header__burger-button burger-button"
+        type="button"
+      >
+        <span class="burger-button__line">
+          <img
+            src="./styles/image/burger_button.svg"
+            alt=""
+            class="burger"
+          >
+        </span>
+      </div>
+
+      <input
+        type="text"
+        class="header__search"
+        placeholder="Поиск"
+      ></input>
+
+      <div class="header__adressa">
+        <div class="header__adressa_line">
+          <img
+            src="./styles/image/location_light.svg"
+            alt=""
+            class="header__icon_location_light"
+          >
+
+          <div>Адреса</div>
+        </div>
+
+        <div class="header__adressa_line">
+          <img
+            src="./styles/image/profile.svg"
+            alt=""
+            class="header__icon_location_light"
+          >
+
+          <div>Войти</div>
+        </div>
+
+        <div class="header__adressa_line">
+          <img
+            src="./styles/image/cart.svg"
+            alt=""
+            class="header__icon_location_light"
+          >
+
+          <div>Корзина</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="catalog container">
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+      <a class="catalog__card">
+      <div class="catalog__card-photo"></div>
+      <div class="catalog__card-sale_photo">
+      <p class="catalog__card-price">38 000 ₽</p>
+      <p class="catalog__card-price-sale"><s>35 000 ₽</s></p>
+    </div>
+      <p class="catalog__card-price-wb">С WB Кошельком</p>
+      <div class="catalog__card-name_b">
+      <p class="catalog__card-name">Tim Cook</p>
+      <p class="catalog__card-name_comp">/ Айфон 13</p>
+    </div>
+    <div class="catalog__card-review">
+      <div class="catalog__card-photo_rating">
+      <p class="catalog__card-review_rating">4,9</p>
+      <p class="catalog__card-review_number">· 1000 оценок</p>
+    </div>
+  </div>
+      <button class="catalog__card-button">Купить</button>
+      </a>
+    </section>
+  </main>
 </body>
 </html>

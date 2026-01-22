@@ -1,0 +1,90 @@
+@use "../helpers" as *;
+
+.catalog{
+
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+
+    &__card{
+
+        margin-top: rem(50);
+        width: rem(215);
+        height: rem(435);
+
+        &-photo{
+            background-image: url('../image/iphone.jpg');
+            width: rem(215);
+            height: rem(286);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &-price{
+            color: var(--color-red);
+            font-weight: bold;
+            font-size: rem(18);
+            margin-left: rem(16);
+        }
+
+        &-sale_photo {
+            background-image: url('../image/icon_sale.png');
+            background-size: rem(14);
+            background-position: left;
+            background-repeat: no-repeat;
+            display: inline-flex;
+        }
+
+        &-price-sale{
+            color: var(--color-gray);
+            margin-left: rem(15);
+            margin-top: rem(20);
+        }
+
+        &-price-wb{
+            color: var(--color-red);
+            font-size: rem(12);
+            margin-top: rem(-15);
+        }
+
+        &-name_b{
+            display: inline-flex;
+            margin-top: rem(-14);
+        }
+
+        &-name_comp{
+            margin-left: rem(5);
+            color: var(--color-gray);
+        }
+
+        &-review {
+            margin-top: rem(-14);
+            display: inline-flex;
+        }
+
+        &-review_number{
+            margin-left: rem(5) ;
+            color: var(--color-gray);
+        }
+
+        &-review_rating{
+            margin-left: rem(18);
+        } 
+
+        &-photo_rating {
+            background-image: url('../image/icon_rating.svg');
+            background-size: rem(14);
+            background-position: left;
+            background-repeat: no-repeat;
+            display: inline-flex;
+        }
+
+        &-button{
+            width: rem(215);
+            height: rem(36);
+            border-radius: rem(15);
+            border: none;
+            color: var(--color-light);
+            background-color: var(--color-accent) ;
+        }
+    }
+}
