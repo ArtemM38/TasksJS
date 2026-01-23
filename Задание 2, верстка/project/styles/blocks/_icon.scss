@@ -43,7 +43,6 @@
     @include square(var(--size));
       background-image: url("../image/valute_rub.svg");
     }
-    padding-left: rem(700);
     font-weight: 600;
   }
 }
