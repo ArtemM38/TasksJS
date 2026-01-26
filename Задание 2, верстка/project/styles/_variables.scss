@@ -1,0 +1,23 @@
+@use 'helpers' as *;
+
+:root {
+    --color-light: #FFFFFF;
+
+    --color-dark: #000000;
+
+    --color-gray: #717171;
+
+    --color-gray-light: #F6F6F6;
+
+    --color-accent: #8900acb6;
+
+    --color-red: #f44;
+
+    --font-family-base: "Montserrat", sans-serif;
+
+    --container-width: #{rem(1400)};
+
+    --container-padding-x: #{rem(16)};
+
+    --container_product-width: #{rem(900)};
+} 

@@ -1,0 +1,46 @@
+@use "helpers" as *;
+
+body {
+  @include fluid-text(14, 12);
+
+  font-family: var(--font-family-base);
+  color: var(--color-dark);
+
+  h3,
+  .h3 {
+    color: var(--color-gray);
+    font-weight: normal;
+  }
+  h4,
+  .h4 {
+    font-weight: normal;
+  }
+  h1,
+  .h1,
+  h2,
+  .h2 {
+    color: var(--color-dark);
+  }
+
+  h1,
+  .h1 {
+    @include fluid-text(30, 14);
+  }
+
+  h2,
+  .h2 {
+    @include fluid-text(28, 18);
+  }
+  h3,
+  .h3 {
+    @include fluid-text(15, 15);
+  }
+  h4,
+  .h4 {
+    @include fluid-text(24, 18);
+  }
+  a {
+    text-decoration: none;
+    color: var(--color-dark);
+  }
+}
